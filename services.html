@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="header container">
+        <a class="header-logo" href="index.html">
+            <img class="header-logo-icons" src="./icons/LOGO.svg" alt="" width="200">
+        </a>
+        <nav class="header-menu">
+            <ul class="header-menu-list">
+                <li class="header-menu-item">
+                    <a class="header-menu-link" href="furniture.html">Мебель</a>
+                </li>
+                <li class="header-menu-item drop">
+                    <a class="header-menu-link" href="services.html">Виды ремонта</a>
+                </li>
+                <div class="header-actions">
+                    <button class="header-contacts-button" type="button" onclick="contactForm.showModal()">
+                        <svg width="22" height="25" viewBox="0 0 22 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.13408 9.02015C0.573792 7.94685 0.396663 6.71446 0.631994 5.52681C0.867324 4.33917 1.50101 3.26743 2.42824 2.48889L3.23425 1.81256C3.59399 1.51111 4.05867 1.36477 4.52623 1.40567C4.99379 1.44658 5.426 1.67139 5.72793 2.03073L8.56413 5.41078C8.86569 5.77094 9.01206 6.23603 8.97112 6.70398C8.93018 7.17193 8.70527 7.60453 8.34575 7.90685C7.98641 8.20878 7.7616 8.64099 7.72069 9.10855C7.67979 9.57611 7.82613 10.0408 8.12758 10.4005L12.6871 15.837C12.8366 16.0153 13.0198 16.1624 13.2262 16.2699C13.4326 16.3773 13.6581 16.4431 13.8899 16.4634C14.1217 16.4836 14.3552 16.458 14.5771 16.388C14.799 16.318 15.005 16.205 15.1832 16.0554C15.5433 15.7538 16.0084 15.6074 16.4764 15.6484C16.9443 15.6893 17.3769 15.9142 17.6792 16.2738L20.5235 19.6714C20.825 20.0311 20.9713 20.4958 20.9304 20.9634C20.8895 21.4309 20.6647 21.8631 20.3054 22.1651L19.4994 22.8414C18.5718 23.6197 17.4063 24.058 16.1957 24.0835C14.9851 24.109 13.8021 23.7203 12.8426 22.9817C8.08329 19.1199 4.10862 14.3813 1.13387 9.02254L1.13408 9.02015Z"
+                                stroke="black" stroke-width="0.91" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <button class="header-form header-overlay" type="button" onclick="formOverlay.showModal()">
+                        <svg class="header-form-icons" width="23" height="24" viewBox="0 0 23 22" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_12_17)">
+                                <path
+                                    d="M1.04541 19.2626V2.58632C1.04541 1.56298 1.9127 0.733398 2.98255 0.733398H20.4168C21.4868 0.733398 22.354 1.56298 22.354 2.58632V19.2626C22.354 20.286 21.4868 21.1155 20.4168 21.1155H2.98255C1.9127 21.1155 1.04541 20.286 1.04541 19.2626Z"
+                                    stroke="black" stroke-width="0.912417" />
+                                <path d="M14.6055 6.29199H16.5426H18.4797" stroke="black" stroke-width="0.912417"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M14.6055 14.167H16.5426H18.4797" stroke="black" stroke-width="0.912417"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M14.6055 16.9463H16.5426H18.4797" stroke="black" stroke-width="0.912417"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M4.91992 6.29237H6.85707M6.85707 6.29237H8.79421M6.85707 6.29237V4.43945M6.85707 6.29237V8.14529"
+                                    stroke="black" stroke-width="0.912417" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M5.4873 16.8675L6.85706 15.5573M6.85706 15.5573L8.22683 14.2471M6.85706 15.5573L5.4873 14.2471M6.85706 15.5573L8.22683 16.8675"
+                                    stroke="black" stroke-width="0.912417" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+
+
+            </ul>
+        </nav>
+
+
+        <button class="burger-button" type="button" onclick="mobileOverlay.showModal()">
+            <span class="visually-hidden">Shoowncnanvidnvizd</span>
+        </button>
+    </header>
+
+    <main class="main">
+
+        <section class="promo">
+            <div class="container">
+                <div class="promo-body">
+                    <div class="promo-inner">
+                        <div class="promo-group">
+                            <h2 class="promo-types-title">
+                                Виды ремонта
+                            </h2>
+                            <div class="promo-description">
+                                <p> Мы используем только качественные материалы и современные технологии, чтобы гарантировать долговечность и привлекательный внешний вид. Каждый проект уникален, и мы внимательно подходим к каждому этапу, чтобы результат превзошел ваши ожидания.
+
+                                </p>
+                            </div>
+                            <button class="promo-button" type="button" onclick="formOverlay.showModal()">
+                                Расчитать стоимость
+                            </button>
+                        </div>
+                        <img class="promo-image" src="./image/types-01.svg" alt="" width="600" height="550"
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature">
+            <div class="container">
+                <div class="feature-bacground">
+                    <div class="feature__body">
+                        <div class="feature__column">
+                            <h2 class="feature__title ">Стандарт ремонт </h2>
+                            <ul class="feature__list">
+                                <li class="feature-link">Демонтажные работы</li>
+                                <li class="feature-link">Межкомнатные перегородки</li>
+                                <li class="feature-link">Сантехнические работы</li>
+                                <li class="feature-link">Электропроводка</li>
+                                <li class="feature-link">Покраска, обои для стен</li>
+                                <li class="feature-link">Побелка потолка</li>
+                                <li class="feature-link">Выравнивание пола</li>
+                                <li class="feature-link">Плинтуса и галтели</li>
+                            </ul>
+                            <div class="feature-price">от 39 000 ТГ.</div>
+                        </div>
+                        <img class="feature-img" src="./image/cosmetic-feature-2.svg" alt="img" width="650"
+                            height="500">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature">
+            <div class="container">
+                <div class="feature-bacground">
+                    <div class="feature__body">
+                        <div class="feature__column">
+                            <h2 class="feature__title ">Комфорт ремонт </h2>
+                            <ul class="feature__list">
+                                <li class="feature-link">Демонтажные работы</li>
+                                <li class="feature-link">Межкомнатные перегородки</li>
+                                <li class="feature-link">Сантехнические работы</li>
+                                <li class="feature-link">Электропроводка</li>
+                                <li class="feature-link">Кафель пол, стена</li>
+                                <li class="feature-link">Побелка потолка</li>
+                                <li class="feature-link">Выравнивание пола</li>
+                                <li class="feature-link">Плинтуса и галтели</li>
+                                <li class="feature-link">Проект чертежей</li>
+                                <li class="feature-link">Подбор материалов от дизайнера</li>
+                                <li class="feature-link">Натяжной потолок, ГКЛ</li>
+                                <li class="feature-link">Молдинги, 3D панели</li>
+                                <li class="feature-link">Установка дверей</li>
+                                <li class="feature-link">Вывоз мусора</li>
+                            </ul>
+                            <div class="feature-price">от 43 000 ТГ.</div>
+                        </div>
+                        <img class="feature-img" src="./image/capital-feature-2.svg" alt="img" width="650" height="500">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature">
+            <div class="container">
+                <div class="feature-bacground">
+                    <div class="feature__body">
+                        <div class="feature__column">
+                            <h2 class="feature__title ">Премиум ремонт </h2>
+                            <ul class="feature__list">
+                                <li class="feature-link">Демонтажные работы</li>
+                                <li class="feature-link">Межкомнатные перегородки</li>
+                                <li class="feature-link">Сантехнические работы</li>
+                                <li class="feature-link">Электропроводка</li>
+                                <li class="feature-link">Покраска, обои для стен</li>
+                                <li class="feature-link">Кафель пол,стена</li>
+                                <li class="feature-link">Побелка потолка</li>
+                                <li class="feature-link">Выравнивание пола</li>
+                                <li class="feature-link">Плинтуса и галтели скрытого монтажа</li>
+                                <li class="feature-link">Проект чертежей</li>
+                                <li class="feature-link">Подбор материалов от дизайнера</li>
+                                <li class="feature-link">Декоративная штукатурка</li>
+                                <li class="feature-link">Натяжной потолок, ГКЛ</li>
+                                <li class="feature-link">Молдинги, 3D панели</li>
+                                <li class="feature-link">Установка дверей скрытого монтажа</li>
+                                <li class="feature-link">Вывоз мусора</li>
+                                <li class="feature-link">Полный дизайн проект</li>
+                                <li class="feature-link">Многоуровневые потолки, парящие потолки</li>
+                                <li class="feature-link">Паркетная доска, инженерная доска, паркет</li>
+                                <li class="feature-link">Клининг</li>
+                            </ul>
+                            <div class="feature-price">от 49 000 ТГ.</div>
+                        </div>
+                        <img class="feature-img" src="./image/designer-feature-2.svg" alt="img" width="650"
+                            height="500">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="work">
+            <div class="container">
+                <div class="work-body">
+                    <div class="work-column work-1">
+                        <h3 class="work-title">Демонтажные работы</h3>
+                        <p class="work-text">- это комплекс мероприятий, направленных на разрушение или демонтаж существующих конструкций,
+                            оборудования, сооружений или элементов объекта с целью последующего их удаления или замены.
+                            Это важный этап в строительстве, реконструкции или ремонте, который требует
+                            профессионального подхода и строгое соблюдение технологических процессов.</p>
+                    </div>
+                    <div class="work-column work-2">
+                        <h3 class="work-title">Межкомнатные перегородки</h3>
+                        <p class="work-text">- это конструктивные элементы, используемые для разделения внутреннего пространства зданий на
+                            отдельные помещения или зоны. Они выполняют не только функцию разделения, но и влияют на
+                            эстетику интерьера, акустику, тепло- и звукоизоляцию, а также функциональность помещений.
+                        </p>
+                    </div>
+                    <div class="work-column work-3">
+                        <h3 class="work-title">Сантехнические работы</h3>
+                        <p class="work-text">Сантехнические работы играют ключевую роль в обеспечении комфортного и безопасного проживания
+                            или работы в зданиях. Эти работы охватывают широкий спектр деятельности, связанный с
+                            установкой, ремонтом и обслуживанием систем водоснабжения, канализации, отопления,
+                            кондиционирования и других инженерных коммуникаций</p>
+                    </div> 
+                    <div class="work-column work-4">
+                        <h3 class="work-title">Электропроводка</h3>
+                        <p class="work-text">- это система электрических соединений, которая обеспечивает электроснабжение здания или
+                            помещения. Она играет важную роль в обеспечении безопасности и комфорта жильцов или
+                            работников, а также эффективного функционирования электрических устройств и оборудования.
+                        </p>
+                    </div>
+                    <div class="work-column work-5">
+                        <h3 class="work-title">Покраска и обои для стен</h3>
+                        <p class="work-text"> - это важные аспекты отделки помещений, которые влияют на их внешний вид, атмосферу и
+                            функциональность. Важно учитывать индивидуальные особенности каждого помещения при выборе и
+                            применении покраски и обоев для стен, чтобы достичь желаемого эстетического и
+                            функционального результата.
+                        </p>
+                    </div> 
+                    <div class="work-column work-6">
+                        <h3 class="work-title">Плинтусы и галтели</h3>
+                        <p class="work-text"> - это элементы отделки, которые используются для завершения дизайна помещения и скрытия стыков
+                            между стенами и полом или потолком. Оба этих элемента играют важную роль в создании
+                            завершенного и стильного интерьера, обеспечивая как функциональные, так и декоративные
+                            преимущества.
+                        </p>
+                    </div>
+                    <div class="work-column work-7">
+                        <h3 class="work-title">Проект чертежей</h3>
+                        <p class="work-text"> Проект чертежей является ключевым этапом в процессе создания архитектурного объекта или
+                            конструкции. Он включает в себя разработку и детализацию технических чертежей, планов, схем
+                            и другой документации, необходимой для реализации проекта. 
+                        </p>
+                    </div>
+                    <div class="work-column work-8">
+                        <h3 class="work-title">Натяжной потолок и гипсокартон (ГКЛ)</h3>
+                        <p class="work-text"> Натяжной потолок и гипсокартон (ГКЛ) - это два популярных материала для отделки потолков,
+                            каждый из которых имеет свои особенности и преимущества. Выбор между натяжным потолком и ГКЛ
+                            зависит от ваших предпочтений, бюджета, характеристик помещения и желаемого дизайна.
+                            Консультация со специалистом поможет определить оптимальный вариант для вашего конкретного
+                            случая.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rooms">
+            <div class="container">
+                <div class="container-rooms">
+                    <div class="rooms-body">
+                        <h2 class="rooms-title">Индивидуальная мебель на заказ</h2>
+                        <div class="rooms-text">Наши мебельные изделия на заказ помогут вам создать атмосферу, которая
+                            отражает вашу уникальную личность и вкусы. Доверьте нам создание мебели, которая будет
+                            идеально
+                            сочетаться с вашим интерьером и стать его неотъемлемой частью.</div>
+
+                        <a href="furniture.html" class="rooms-link">
+                            <div class="rooms-column-img">
+                                <svg width="20" height="20" viewBox="0 0 17 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.2662 2.52851C16.1191 2.31974 15.927 2.14625 15.7025 2.01944C15.478 1.89263 15.2261 1.81539 14.9635 1.79279L3.47439 0.830283C3.18525 0.816333 2.89605 0.913508 2.66773 1.10133C2.43942 1.28915 2.28982 1.55295 2.25047 1.83713C2.21112 2.12131 2.28509 2.40367 2.45679 2.6247C2.6285 2.84574 2.88452 2.98819 3.1709 3.02203L12.0468 3.76463C12.0858 3.76805 12.1223 3.78311 12.1513 3.80779C12.1803 3.83247 12.2006 3.86562 12.2093 3.90285C12.2181 3.94009 12.215 3.97964 12.2004 4.01629C12.1858 4.05293 12.1604 4.08494 12.1276 4.10807L1.01771 11.8873C0.769786 12.0609 0.597271 12.3206 0.538118 12.6093C0.478965 12.8979 0.53802 13.1919 0.702291 13.4265C0.866563 13.6611 1.12259 13.8171 1.41406 13.8602C1.70553 13.9034 2.00856 13.8301 2.25648 13.6565L13.3645 5.87858C13.3975 5.85588 13.4363 5.84317 13.4757 5.84212C13.5151 5.84108 13.5533 5.85175 13.5853 5.87274C13.6172 5.89373 13.6415 5.92405 13.6548 5.95972C13.6681 5.9954 13.6699 6.03476 13.66 6.07264L11.3221 14.6672C11.2765 14.8108 11.2605 14.9605 11.2752 15.1072C11.2898 15.254 11.3347 15.3948 11.4072 15.5211C11.4797 15.6474 11.5783 15.7567 11.6971 15.8424C11.8158 15.9281 11.9523 15.9884 12.0982 16.0197C12.2442 16.051 12.3966 16.0527 12.5464 16.0246C12.6961 15.9964 12.8401 15.9392 12.9696 15.8561C13.0992 15.7731 13.2116 15.6661 13.3002 15.5415C13.3887 15.4169 13.4516 15.2773 13.485 15.131L16.5113 4.00469C16.5802 3.75016 16.5939 3.48699 16.5517 3.23254C16.5094 2.97808 16.4121 2.73813 16.2662 2.52851Z"
+                                        fill="black" />
+                                </svg>
+                            </div>
+                            ПОДРОБНЕЕ
+                        </a>
+                    </div>
+                    <div class="rooms-image-group">
+                        <img class="rooms-image" src="./image/rooms-image-01.svg" alt="" width="600" height="400">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stages">
+            <div class="container stages-container">
+                <div class="stages-content">
+                    <h2 class="steges__main-title">Этапы работ</h2>
+                    <ul class="stages__body">
+                        <li class="stages__group">
+                            <h3 class="stages__number">01</h3>
+                            <h3 class="stages__title">Заявка на консультацтю</h3>
+                            <p class="stages__text">Оставляйте заявку.
+                                Связавшись с нами по телефону, вы можете получить консультацию по всем вопросам,</p>
+                        </li>
+                        <li class="stages__group">
+                            <h3 class="stages__number">02</h3>
+                            <h3 class="stages__title">Выезжаем на замер</h3>
+                            <p class="stages__text">Мы проводим осмотр объекта. Определяем необходимый объем работы.
+                                И предлогаем вам наиболее оптимальное решение</p>
+                        </li>
+                        <li class="stages__group">
+                            <h3 class="stages__number">03</h3>
+
+                            <h3 class="stages__title">Подписываем договор</h3>
+                            <p class="stages__text">Составляем смету, график выполнения и оплаты работ.
+                                Подписываем договор.</p>
+
+                        </li>
+                        <li class="stages__group">
+                            <h3 class="stages__number">04</h3>
+                            <h3 class="stages__title">Закуп материалов</h3>
+                            <p class="stages__text">Закупаем и доставляем материалы на объект. Предоставляем чеки и
+                                документы.</p>
+                        </li>
+                        <li class="stages__group">
+                            <h3 class="stages__number">05</h3>
+
+                            <h3 class="stages__title">Ремонтные работы </h3>
+                            <p class="stages__text">Выполняем ремонтные работы согласно подписанному договору.</p>
+                        </li>
+                        <li class="stages__group">
+                            <h3 class="stages__number">06</h3>
+
+                            <h3 class="stages__title">Передача заказчику</h3>
+                            <p class="stages__text">Приём передача объекта заказчику.
+                                Предоставление гарантийных обязательств.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="question">
+            <div class="container">
+                <h2 class="accordion-title">Самые важные вопросы и ответы на них</h2>
+                <div class="accordion">
+                    <div class="content">
+                        <div class="accordion_item">
+                            <div class="accordion_header ">
+                                <span>
+                                    Заявка на консультацию
+                                </span>
+                                <div class="icon">
+                                    +
+                                </div>
+                            </div>
+
+                            <div class="accordion_content">
+                                <p class="accordion_text">
+                                    Посещение объекта специалистом для составления сметы, определения стоимости,
+                                    проведения замеров, а также все сопутствующие консультации осуществляются бесплатно.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="accordion_item">
+                            <div class="accordion_header ">
+                                <span>
+                                    Сколько стоит ремонт квартир?
+                                </span>
+                                <div class="icon">
+                                    +
+                                </div>
+                            </div>
+                            <div class="accordion_content ">
+                                <p class="accordion_text">
+                                    Конечная стоимость ремонта квартиры зависит от ряда факторов, среди которых можно
+                                    выделить площадь, материалы, дизайн, технические особенности. Вы можете связаться с
+                                    нами или оставить заявку, чтобы узнать стоимость ремонта Вашего объекта.
+                            </div>
+                        </div>
+                        <div class="accordion_item">
+                            <div class="accordion_header">
+                                <span>
+                                    Что такое дизайн проект?
+                                </span>
+                                <div class="icon">
+                                    +
+                                </div>
+                            </div>
+                            <div class="accordion_content">
+                                <p class="accordion_text">
+                                    Дизайн-проект квартиры — это комплексный пакет документов с вариантами планировки
+                                    жилых помещений, схемами, 3D-визуализацией или иллюстрациями. Он необходим, для того
+                                    чтобы визуализировать будущий интерьер и определиться с тем, каким будет объект
+                                    после ремонта.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="accordion_item">
+                            <div class="accordion_header">
+                                <span>
+                                    Сколько времени занимает ремонт квартиры?
+                                </span>
+                                <div class="icon">
+                                    +
+                                </div>
+                            </div>
+                            <div class="accordion_content">
+                                <p class="accordion_text">
+                                    Сроки определяются индивидуально в зависимости от объема работ. Поэтому Вы можете
+                                    связаться с нами и мы соориентируем Вас по срокам и бюджету ремонта.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="accordion_item">
+                            <div class="accordion_header ">
+                                <span>
+                                    Может ли измениться стоимость ремонта в процессе?
+                                </span>
+                                <div class="icon">
+                                    +
+                                </div>
+                            </div>
+                            <div class="accordion_content">
+                                <p class="accordion_text">
+                                    Мы определяем стоимость ремонта перед заключением договара и она остается
+                                    фиксированной и не меняется. Но в случае, если Вы захотите что-то добавить или
+                                    убрать в процессе, стоимость может как вырасти, так и упасть.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="accordion_item">
+                            <div class="accordion_header ">
+                                <span>
+                                    Могу ли я контролировать процесс?
+                                </span>
+                                <div class="icon">
+                                    +
+                                </div>
+                            </div>
+                            <div class="accordion_content">
+                                <p class="accordion_text">
+                                    Да, мы предоставляем полный отчет о проделанной работе, также можем высылать фото- и
+                                    видеоотчеты по Вашему запросу.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-body">
+                <div class="footer-content">
+                    <div class="app-info">
+                        <img class="footer-logo" src="./icons/LOGO.svg" alt="" width="205">
+                        <p>С нами ваш ремонт – это профессиональный подход и качественные материалы.</p>
+                    </div>
+                    <div class="footer-actions">
+                        <div class="services-actions">
+                            <a href="furniture.html" class="furniture-footer-link">
+                                <h2 class="action-header">Мебель</h2>
+                            </a>
+                        </div>
+                        <div class="services-actions">
+                            <a href="services.html" class="furniture-footer-link">
+                                <h2 class="action-header">Виды ремонта</h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="footer-social-icons">
+                    <a class="footer-style-icons" href=""><img src="./icons/footer-mail.svg" alt=""></a>
+                    <a class="footer-style-icons" href=""><img src="./icons/footer-telegram.svg" alt=""></a>
+                    <a class="footer-style-icons" href=""><img src="./icons/footer-telephone.svg" alt=""></a>
+                    <a class="footer-style-icons" href=""><img src="./icons/footer-instagram.svg" alt=""></a>
+                    <a class="footer-style-icons" href=""><img src="./icons/footer-whatsapp.svg" alt=""></a>
+                </div> -->
+                <div class="copyright">
+                    <p class="copyright-text">
+                        &copy; 2023 All roghts reserved
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <dialog class="mobile-overlay" id="mobileOverlay">
+        <form class="mobile-overlay__close-button-wrapper" method="dialog">
+            <button class="cross-button" type="submit">
+                <span class="visually-hidden">Close navigation menu</span>
+            </button>
+        </form>
+        <div class="mobile-overlay__body">
+            <ul class="mobile-overlay__list">
+                <li class="mobile-overlay__item">
+                    <a class="mobile-overlay__link" href="index.html">Главная</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a class="mobile-overlay__link" href="services.html">Виды ремонта</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a class="mobile-overlay__link" href="furniture.html">Мебель</a>
+                </li>
+            </ul>
+            <div class="mobile-overlay-actions">
+                <button class="mobile-overlay-contacts" type="button" onclick="contactForm.showModal()">
+                    <svg width="22" height="25" viewBox="0 0 22 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1.13408 9.02015C0.573792 7.94685 0.396663 6.71446 0.631994 5.52681C0.867324 4.33917 1.50101 3.26743 2.42824 2.48889L3.23425 1.81256C3.59399 1.51111 4.05867 1.36477 4.52623 1.40567C4.99379 1.44658 5.426 1.67139 5.72793 2.03073L8.56413 5.41078C8.86569 5.77094 9.01206 6.23603 8.97112 6.70398C8.93018 7.17193 8.70527 7.60453 8.34575 7.90685C7.98641 8.20878 7.7616 8.64099 7.72069 9.10855C7.67979 9.57611 7.82613 10.0408 8.12758 10.4005L12.6871 15.837C12.8366 16.0153 13.0198 16.1624 13.2262 16.2699C13.4326 16.3773 13.6581 16.4431 13.8899 16.4634C14.1217 16.4836 14.3552 16.458 14.5771 16.388C14.799 16.318 15.005 16.205 15.1832 16.0554C15.5433 15.7538 16.0084 15.6074 16.4764 15.6484C16.9443 15.6893 17.3769 15.9142 17.6792 16.2738L20.5235 19.6714C20.825 20.0311 20.9713 20.4958 20.9304 20.9634C20.8895 21.4309 20.6647 21.8631 20.3054 22.1651L19.4994 22.8414C18.5718 23.6197 17.4063 24.058 16.1957 24.0835C14.9851 24.109 13.8021 23.7203 12.8426 22.9817C8.08329 19.1199 4.10862 14.3813 1.13387 9.02254L1.13408 9.02015Z"
+                            stroke="black" stroke-width="0.91" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="mobile-overlay-icons" type="button" onclick="formOverlay.showModal()">
+                    <svg class="header-form-icons" width="27" height="26" viewBox="0 0 23 22" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_12_17)">
+                            <path
+                                d="M1.04541 19.2626V2.58632C1.04541 1.56298 1.9127 0.733398 2.98255 0.733398H20.4168C21.4868 0.733398 22.354 1.56298 22.354 2.58632V19.2626C22.354 20.286 21.4868 21.1155 20.4168 21.1155H2.98255C1.9127 21.1155 1.04541 20.286 1.04541 19.2626Z"
+                                stroke="black" stroke-width="0.912417" />
+                            <path d="M14.6055 6.29199H16.5426H18.4797" stroke="black" stroke-width="0.912417"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M14.6055 14.167H16.5426H18.4797" stroke="black" stroke-width="0.912417"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M14.6055 16.9463H16.5426H18.4797" stroke="black" stroke-width="0.912417"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M4.91992 6.29237H6.85707M6.85707 6.29237H8.79421M6.85707 6.29237V4.43945M6.85707 6.29237V8.14529"
+                                stroke="black" stroke-width="0.912417" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M5.4873 16.8675L6.85706 15.5573M6.85706 15.5573L8.22683 14.2471M6.85706 15.5573L5.4873 14.2471M6.85706 15.5573L8.22683 16.8675"
+                                stroke="black" stroke-width="0.912417" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </dialog>
+    <dialog class="mobile-overlay" id="formOverlay">
+        <form class="mobile-overlay__close-button-wrapper" method="dialog">
+            <button class="cross-button" type="submit">
+                <span class="visually-hidden">Close menu</span>
+            </button>
+        </form>
+        <div class="form-body">
+            <h2 class="form__main-title">Предварительная стоимасть</h2>
+            <form class="form" id="main-form" action="php/sendmail.php" method="POST" >
+                <div class="column input-column">
+                    <div class="input-box">
+                        <span>Площадь помещение?</span>
+                        <input type="name" id="square" placeholder="Укажите площадь" />
+                    </div>
+                    <div class="input-box">
+                        <span>Количество комнат?</span>
+                        <input type="name" id="room" placeholder="Укажите количество" />
+                    </div>
+                </div>
+                <div class="column input-column"> 
+                    <div class="input-box">
+                        <span>Выберите вид ремонта</span>
+                        <div class="select-box">
+                            <select id="rateRepair">
+                                <option value="">Тариф ремонта</option>
+                                <option value="Стандарт">Стандарт</option>
+                                <option value="Комфорт">Комфорт</option>
+                                <option value="Премиум">Премиум</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="column input-column">
+                    <div class="input-box">
+                        <span>Выберите когда ремонт</span>
+                        <div class="select-box">
+                            <select id="whenRepair">
+                                <option value="">Выберите когда ремонт</option>
+                                <option value="В течение недели">В течение недели</option>
+                                <option value="В течение месяца">В течение месяца</option>
+                                <option value="Все зависит от цены">Все зависит от цены</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <span>Выберите ваш город</span>
+                        <div class="select-box">
+                            <select id="formCity">
+                                <option value="">Ваш город</option>
+                                <option value="Астана">Астана</option>
+                                <option value="Аламата">Алмата</option>
+                                <option value="Шымкент">Шымкент</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-column">
+                    <div class="input-box">
+                        <span>Ваша Имя:</span>
+                        <input type="name" placeholder="Name" id="name1" />
+                    </div>
+                    <div class="input-box">
+                        <span>Ваш номер</label>
+                            <input type="tel" placeholder="Telephone" id="tel1" />
+                    </div>
+                </div>
+                <button class="submit">Submit</button>
+            </form>
+        </div>
+
+    </dialog>
+
+    <dialog class="mobile-overlay" id="contactForm">
+        <form class="mobile-overlay__close-button-wrapper" method="dialog">
+            <button class="cross-button" type="submit">
+                <span class="visually-hidden">Close menu</span>
+            </button>
+        </form>
+        <div class="contactForm-body">
+            <div class="contactForm-contact">
+                <h2 class="contactForm-title">Наши Контакты</h2>
+
+                <div class="contactForm-content">
+                    <img class="contactForm-telephone-icons" src="./icons/footer-telephone.svg" alt="">
+                    <div class="contactForm-telephone-item">+7 (777) 000 00 00</div>
+                </div>
+                <!-- <div class="contactForm-content">
+                    <h3 class="contactForm-social-title">Cоц.сети:</h3>
+                    <div class="contactForm-social">
+                        <img src="./icons/footer-instagram.svg" alt="" class="contactForm-social-icon">
+                        <img src="./icons/footer-whatsapp.svg" alt="" class="contactForm-social-icon">
+                        <img src="./icons/footer-telegram.svg" alt="" class="contactForm-social-icon">
+                        <img src="./icons/footer-mail.svg" alt="" class="contactForm-social-icon">
+                    </div>
+                </div> -->
+
+            </div>
+            <form class="contactForm-form" id="formContact">
+                <h2 class="contactForm-title">Оставьте заявку</h2>
+                <div class="contactForm-input-box">
+                    <span>Имя:</span>
+                    <input type="text" id="name2" placeholder="Введите имя">
+                </div>
+                <div class="contactForm-input-box">
+                    <span>Телефон:</span>
+                    <input type="text" id="tel2" placeholder="Введите телефон">
+                </div>
+                <button>Отправить</button>
+            </form>
+        </div>
+    </dialog>
+
+
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="js/inputmask.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

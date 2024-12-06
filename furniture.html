@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!------------------- == HEADER == ------------------->
+    <header class="header container">
+        <a class="header-logo" href="index.html">
+            <img class="header-logo-icons" src="./icons/LOGO.svg" alt="" width="200">
+        </a>
+        <nav class="header-menu">
+            <ul class="header-menu-list">
+                <li class="header-menu-item">
+                    <a class="header-menu-link" href="furniture.html">Мебель</a>
+                </li>
+                <li class="header-menu-item drop">
+                    <a class="header-menu-link" href="services.html">Виды ремонта</a>
+                </li>
+                <div class="header-actions">
+                    <button class="header-contacts-button" type="button" onclick="contactForm.showModal()">
+                        <svg width="22" height="25" viewBox="0 0 22 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.13408 9.02015C0.573792 7.94685 0.396663 6.71446 0.631994 5.52681C0.867324 4.33917 1.50101 3.26743 2.42824 2.48889L3.23425 1.81256C3.59399 1.51111 4.05867 1.36477 4.52623 1.40567C4.99379 1.44658 5.426 1.67139 5.72793 2.03073L8.56413 5.41078C8.86569 5.77094 9.01206 6.23603 8.97112 6.70398C8.93018 7.17193 8.70527 7.60453 8.34575 7.90685C7.98641 8.20878 7.7616 8.64099 7.72069 9.10855C7.67979 9.57611 7.82613 10.0408 8.12758 10.4005L12.6871 15.837C12.8366 16.0153 13.0198 16.1624 13.2262 16.2699C13.4326 16.3773 13.6581 16.4431 13.8899 16.4634C14.1217 16.4836 14.3552 16.458 14.5771 16.388C14.799 16.318 15.005 16.205 15.1832 16.0554C15.5433 15.7538 16.0084 15.6074 16.4764 15.6484C16.9443 15.6893 17.3769 15.9142 17.6792 16.2738L20.5235 19.6714C20.825 20.0311 20.9713 20.4958 20.9304 20.9634C20.8895 21.4309 20.6647 21.8631 20.3054 22.1651L19.4994 22.8414C18.5718 23.6197 17.4063 24.058 16.1957 24.0835C14.9851 24.109 13.8021 23.7203 12.8426 22.9817C8.08329 19.1199 4.10862 14.3813 1.13387 9.02254L1.13408 9.02015Z"
+                                stroke="black" stroke-width="0.91" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <button class="header-form header-overlay" type="button" onclick="formOverlay.showModal()">
+                        <svg class="header-form-icons" width="23" height="24" viewBox="0 0 23 22" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_12_17)">
+                                <path
+                                    d="M1.04541 19.2626V2.58632C1.04541 1.56298 1.9127 0.733398 2.98255 0.733398H20.4168C21.4868 0.733398 22.354 1.56298 22.354 2.58632V19.2626C22.354 20.286 21.4868 21.1155 20.4168 21.1155H2.98255C1.9127 21.1155 1.04541 20.286 1.04541 19.2626Z"
+                                    stroke="black" stroke-width="0.912417" />
+                                <path d="M14.6055 6.29199H16.5426H18.4797" stroke="black" stroke-width="0.912417"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M14.6055 14.167H16.5426H18.4797" stroke="black" stroke-width="0.912417"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M14.6055 16.9463H16.5426H18.4797" stroke="black" stroke-width="0.912417"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M4.91992 6.29237H6.85707M6.85707 6.29237H8.79421M6.85707 6.29237V4.43945M6.85707 6.29237V8.14529"
+                                    stroke="black" stroke-width="0.912417" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M5.4873 16.8675L6.85706 15.5573M6.85706 15.5573L8.22683 14.2471M6.85706 15.5573L5.4873 14.2471M6.85706 15.5573L8.22683 16.8675"
+                                    stroke="black" stroke-width="0.912417" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+
+
+            </ul>
+        </nav>
+
+
+        <button class="burger-button" type="button" onclick="mobileOverlay.showModal()">
+            <span class="visually-hidden">Shoowncnanvidnvizd</span>
+        </button>
+    </header>
+    <!------------------- == MAIN == ------------------->
+
+    <main class="main">
+
+        <section class="promo">
+            <div class="container">
+                <div class="promo-body">
+                    <div class="promo-inner">
+                        <div class="promo-group">
+                            <h2 class="promo-title">
+                                Изготовление мебели на заказ
+                            </h2>
+                            <div class="promo-description">
+                                <p>
+                                    Воплощение ваших идей в реальность
+                                </p>
+                            </div>
+                            <button class="promo-button" type="button" onclick="formOverlay.showModal()">
+                                Расчитать стоимость
+                            </button>
+                        </div>
+                        <img class="promo-image" src="./image/rooms-image-01.svg" alt="" width="600" height="550"
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="furniture-category">
+            <div class="container">
+                <div class="furniture-category-group">
+                    <h2 class="furniture-category-maintitle">Закажите на заказ мебель</h2>
+                    <button class="furniture-categoru-button" type="button"
+                        onclick="furnitureCategory.showModal()">Заказать</button>
+                </div>
+                <ul class="furniture-category-body">
+                    <li class="furniture-category-item category-1">
+                        <h3 class="furniture-category-title">Кухню на заказ</h3>
+                        <img class="furniture-category-img" src="./image/furniture-category-01.png" alt="">
+                    </li>
+                    <li class="furniture-category-item category-2">
+                        <h3 class="furniture-category-title">Мебель для спальни</h3>
+                        <img class="furniture-category-img" src="./image/furniture-category-02.png" alt="">
+                    </li>
+                    <li class="furniture-category-item category-3">
+                        <h3 class="furniture-category-title">Детская мебель</h3>
+                        <img class="furniture-category-img" src="./image/furniture-category-03.png" alt="">
+                    </li>
+                    <li class="furniture-category-item category-4">
+                        <h3 class="furniture-category-title">Прихожая мебель</h3>
+                        <img class="furniture-category-img" src="./image/furniture-category-04.png" alt="">
+                    </li>
+                    <li class="furniture-category-item category-5">
+                        <h3 class="furniture-category-title">Гардероб на заказ</h3>
+                        <img class="furniture-category-img" src="./image/furniture-category-05.png" alt="">
+                    </li>
+                    <li class="furniture-category-item category-6">
+                        <h3 class="furniture-category-title">Комоды</h3>
+                        <img class="furniture-category-img" src="./image/furniture-category-07.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="feature">
+            <div class="container">
+                <div class="feature-bacground">
+                    <div class="feature__body">
+                        <div class="feature__column">
+                            <h2 class="feature__title ">Изготовление мебели </h2>
+                            <p class="feature__text ">
+                                Мебель на заказ предлагает неограниченные возможности для создания идеального интерьера
+                                вашего дома или
+                                офиса. Одним из ключевых преимуществ индивидуальной мебели является ее уникальность. Вы
+                                можете выбирать не
+                                только дизайн и материалы, но и размеры, форму, функциональные особенности и каждую
+                                деталь вашей мебели.
+                                Это позволяет создать абсолютно уникальные и функциональные предметы интерьера, которые
+                                идеально впишутся
+                                в ваш стиль и удовлетворят ваши потребности.
+                            </p>
+                            <h3 class="feature__subtitle ">Индивидуальный подход к каждому
+                                проекту</h3>
+                            <p class="feature__text">Мы верим, что каждый клиент уникален, и
+                                каждый проект требует индивидуального
+                                подхода. Наша команда
+                                опытных дизайнеров и мастеров готова воплотить в жизнь любые ваши идеи и предпочтения.
+                                Мы работаем над
+                                каждым заказом с любовью к деталям и стремлением к совершенству, чтобы создать мебель,
+                                которая полностью
+                                соответствует вашим ожиданиям.</p>
+                            <h3 class="feature__subtitle ">Закажите мебель на заказ прямо
+                                сейчас</h3>
+                            <p class="feature__text ">Не ждите, чтобы ваш дом стал идеальным.
+                                Сделайте его таким прямо сейчас, заказав у
+                                нас мебель на заказ.
+                                Свяжитесь с нами сегодня, чтобы обсудить ваши идеи и начать создание мебели вашей мечты.
+                            </p>
+
+                        </div>
+                        <img class="feature-img" src="./image/furniture-feature.jpg" alt="img" width="650" height="500">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="types">
+            <div class="container">
+                <div class="types-body">
+                    <h2 class="types-title">Виды ремонта</h2>
+                    <div class="types-column">
+                        <article class="types-column-item types-column-01">
+                            <div class="types-column-group">
+                                <h3 class="types-column-title">Стандарт ремонт</h3>
+                                <p class="types-column-text">Для быстрого бюджетного обновления интерьера
+                                    помещения.</p>
+                                <div class="types-column-line">от 39 000 тг за кв.м </div>
+                                <a href="services.html" class="types-column-link">
+                                    <div class="types-column-img">
+                                        <img src="./icons/arrow-types.svg" alt="" width="13" height="13">
+                                    </div>
+                                    Подробнее
+                                </a>
+                            </div>
+                            <img src="./image/types-01.svg" class="types-image" alt="">
+                        </article>
+                        <article class="types-column-item types-column-02">
+                            <div class="types-column-group">
+                                <h3 class="types-column-title types-column-title-02">Комфорт ремонт</h3>
+                                <p class="types-column-text types-column-text-02">Для полной смены интерьера или ремонта
+                                    в
+                                    новостройке помещения.</p>
+                                <div class="types-column-line types-column-line-02">от 43 000 тг за кв.м </div>
+                                <a href="services.html" class="types-column-link types-column-link-02">
+                                    <div class="types-column-img">
+                                        <img src="./icons/arrow-types.svg" alt="" width="13" height="13">
+                                    </div>
+                                    Подробнее
+                                </a>
+                            </div>
+                            <img src="./image/types-02.svg" class="types-image" alt="">
+                        </article>
+                        <article class="types-column-item types-column-03">
+                            <div class="types-column-group">
+                                <h3 class="types-column-title">Премиум ремонт</h3>
+                                <p class="types-column-text">Разработка полностью уникального дизайна для
+                                    вашей
+                                    квартиры.</p>
+                                <div class="types-column-line">от 49 000 тг за кв.м </div>
+                                <a href="services.html" class="types-column-link">
+                                    <div class="types-column-img">
+                                        <img src="./icons/arrow-types.svg" alt="" width="13" height="13">
+                                    </div>
+                                    Подробнее
+                                </a>
+                            </div>
+                            <img src="./image/types-03.svg" class="types-image" alt="">
+                        </article>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- <section class="portfolio">
+            <div class="container">
+                <div class="portfolio-body">
+                    <h2 class="portfolio-title">Наши работы</h2>
+                    <div class="portfolio-swiper">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="swiper-image" src="./image/portfolio-image-01.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="swiper-image" src="./image/portfolio-image-01.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="swiper-image" src="./image/portfolio-image-01.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev">
+                            </div>
+                            <div class="swiper-button-next">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+    </main>
+
+    <!------------------- == FOOTER == ------------------->
+
+    <footer>
+        <div class="container">
+            <div class="footer-body">
+                <div class="footer-content">
+                    <div class="app-info">
+                        <img class="footer-logo" src="./icons/LOGO.svg" alt="" width="205">
+                        <p>С нами ваш ремонт – это профессиональный подход и качественные материалы.</p>
+                    </div>
+                    <div class="footer-actions">
+                        <div class="services-actions">
+                            <a href="furniture.html" class="furniture-footer-link">
+                                <h2 class="action-header">Мебель</h2>
+                            </a>
+                        </div>
+                        <div class="services-actions">
+                            <a href="services.html" class="furniture-footer-link">
+                                <h2 class="action-header">Виды ремонта</h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="footer-social-icons">
+                    <a class="footer-style-icons" href=""><img src="./icons/footer-mail.svg" alt=""></a>
+                    <a class="footer-style-icons" href=""><img src="./icons/footer-telegram.svg" alt=""></a>
+                    <a class="footer-style-icons" href=""><img src="./icons/footer-telephone.svg" alt=""></a>
+                    <a class="footer-style-icons" href=""><img src="./icons/footer-instagram.svg" alt=""></a>
+                    <a class="footer-style-icons" href=""><img src="./icons/footer-whatsapp.svg" alt=""></a>
+                </div> -->
+                <div class="copyright">
+                    <p class="copyright-text">
+                        &copy; 2023 All roghts reserved
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!------------------- == DIALOG == ------------------->
+
+    <dialog class="mobile-overlay" id="mobileOverlay">
+        <form class="mobile-overlay__close-button-wrapper" method="dialog">
+            <button class="cross-button" type="submit">
+                <span class="visually-hidden">Close navigation menu</span>
+            </button>
+        </form>
+        <div class="mobile-overlay__body">
+            <ul class="mobile-overlay__list">
+                <li class="mobile-overlay__item">
+                    <a class="mobile-overlay__link" href="index.html">Главная</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a class="mobile-overlay__link" href="services.html">Виды ремонта</a>
+                </li>
+                <li class="mobile-overlay__item">
+                    <a class="mobile-overlay__link" href="furniture.html">Мебель</a>
+                </li>
+            </ul>
+            <div class="mobile-overlay-actions">
+                <button class="mobile-overlay-contacts" type="button" onclick="contactForm.showModal()">
+                    <svg width="22" height="25" viewBox="0 0 22 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1.13408 9.02015C0.573792 7.94685 0.396663 6.71446 0.631994 5.52681C0.867324 4.33917 1.50101 3.26743 2.42824 2.48889L3.23425 1.81256C3.59399 1.51111 4.05867 1.36477 4.52623 1.40567C4.99379 1.44658 5.426 1.67139 5.72793 2.03073L8.56413 5.41078C8.86569 5.77094 9.01206 6.23603 8.97112 6.70398C8.93018 7.17193 8.70527 7.60453 8.34575 7.90685C7.98641 8.20878 7.7616 8.64099 7.72069 9.10855C7.67979 9.57611 7.82613 10.0408 8.12758 10.4005L12.6871 15.837C12.8366 16.0153 13.0198 16.1624 13.2262 16.2699C13.4326 16.3773 13.6581 16.4431 13.8899 16.4634C14.1217 16.4836 14.3552 16.458 14.5771 16.388C14.799 16.318 15.005 16.205 15.1832 16.0554C15.5433 15.7538 16.0084 15.6074 16.4764 15.6484C16.9443 15.6893 17.3769 15.9142 17.6792 16.2738L20.5235 19.6714C20.825 20.0311 20.9713 20.4958 20.9304 20.9634C20.8895 21.4309 20.6647 21.8631 20.3054 22.1651L19.4994 22.8414C18.5718 23.6197 17.4063 24.058 16.1957 24.0835C14.9851 24.109 13.8021 23.7203 12.8426 22.9817C8.08329 19.1199 4.10862 14.3813 1.13387 9.02254L1.13408 9.02015Z"
+                            stroke="black" stroke-width="0.91" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <button class="mobile-overlay-icons" type="button" onclick="formOverlay.showModal()">
+                    <svg class="header-form-icons" width="27" height="26" viewBox="0 0 23 22" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_12_17)">
+                            <path
+                                d="M1.04541 19.2626V2.58632C1.04541 1.56298 1.9127 0.733398 2.98255 0.733398H20.4168C21.4868 0.733398 22.354 1.56298 22.354 2.58632V19.2626C22.354 20.286 21.4868 21.1155 20.4168 21.1155H2.98255C1.9127 21.1155 1.04541 20.286 1.04541 19.2626Z"
+                                stroke="black" stroke-width="0.912417" />
+                            <path d="M14.6055 6.29199H16.5426H18.4797" stroke="black" stroke-width="0.912417"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M14.6055 14.167H16.5426H18.4797" stroke="black" stroke-width="0.912417"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M14.6055 16.9463H16.5426H18.4797" stroke="black" stroke-width="0.912417"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M4.91992 6.29237H6.85707M6.85707 6.29237H8.79421M6.85707 6.29237V4.43945M6.85707 6.29237V8.14529"
+                                stroke="black" stroke-width="0.912417" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M5.4873 16.8675L6.85706 15.5573M6.85706 15.5573L8.22683 14.2471M6.85706 15.5573L5.4873 14.2471M6.85706 15.5573L8.22683 16.8675"
+                                stroke="black" stroke-width="0.912417" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="mobile-overlay" id="formOverlay">
+        <form class="mobile-overlay__close-button-wrapper" method="dialog">
+            <button class="cross-button" type="submit">
+                <span class="visually-hidden">Close menu</span>
+            </button>
+        </form>
+        <div class="form-body">
+            <h2 class="form__main-title">Предварительная стоимасть</h2>
+            <form class="form" id="main-form" action="php/sendmail.php" method="POST" >
+                <div class="column input-column">
+                    <div class="input-box">
+                        <span>Площадь помещение?</span>
+                        <input type="name" id="square" placeholder="Укажите площадь" />
+                    </div>
+                    <div class="input-box">
+                        <span>Количество комнат?</span>
+                        <input type="name" id="room" placeholder="Укажите количество" />
+                    </div>
+                </div>
+                <div class="column input-column"> 
+                    <div class="input-box">
+                        <span>Выберите вид ремонта</span>
+                        <div class="select-box">
+                            <select id="rateRepair">
+                                <option value="">Тариф ремонта</option>
+                                <option value="Стандарт">Стандарт</option>
+                                <option value="Комфорт">Комфорт</option>
+                                <option value="Премиум">Премиум</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="column input-column">
+                    <div class="input-box">
+                        <span>Выберите когда ремонт</span>
+                        <div class="select-box">
+                            <select id="whenRepair">
+                                <option value="">Выберите когда ремонт</option>
+                                <option value="В течение недели">В течение недели</option>
+                                <option value="В течение месяца">В течение месяца</option>
+                                <option value="Все зависит от цены">Все зависит от цены</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <span>Выберите ваш город</span>
+                        <div class="select-box">
+                            <select id="formCity">
+                                <option value="">Ваш город</option>
+                                <option value="Астана">Астана</option>
+                                <option value="Аламата">Алмата</option>
+                                <option value="Шымкент">Шымкент</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-column">
+                    <div class="input-box">
+                        <span>Ваша Имя:</span>
+                        <input type="name" placeholder="Name" id="name1" />
+                    </div>
+                    <div class="input-box">
+                        <span>Ваш номер</label>
+                            <input type="tel" placeholder="Telephone" id="tel1" />
+                    </div>
+                </div>
+                <button class="submit">Submit</button>
+            </form>
+        </div>
+
+    </dialog>
+
+    <dialog class="mobile-overlay" id="contactForm">
+        <form class="mobile-overlay__close-button-wrapper" method="dialog">
+            <button class="cross-button" type="submit">
+                <span class="visually-hidden">Close menu</span>
+            </button>
+        </form>
+        <div class="contactForm-body">
+            <div class="contactForm-contact">
+                <h2 class="contactForm-title">Наши Контакты</h2>
+
+                <div class="contactForm-content">
+                    <img class="contactForm-telephone-icons" src="./icons/footer-telephone.svg" alt="">
+                    <div class="contactForm-telephone-item">+7 (777) 000 00 00</div>
+                </div>
+                <!-- <div class="contactForm-content">
+                    <h3 class="contactForm-social-title">Cоц.сети:</h3>
+                    <div class="contactForm-social">
+                        <img src="./icons/footer-instagram.svg" alt="" class="contactForm-social-icon">
+                        <img src="./icons/footer-whatsapp.svg" alt="" class="contactForm-social-icon">
+                        <img src="./icons/footer-telegram.svg" alt="" class="contactForm-social-icon">
+                        <img src="./icons/footer-mail.svg" alt="" class="contactForm-social-icon">
+                    </div>
+                </div> -->
+
+            </div>
+            <form class="contactForm-form" id="formContact">
+                <h2 class="contactForm-title">Оставьте заявку</h2>
+                <div class="contactForm-input-box">
+                    <span>Имя:</span>
+                    <input type="text" id="name2" placeholder="Введите имя">
+                </div>
+                <div class="contactForm-input-box">
+                    <span>Телефон:</span>
+                    <input type="text" id="tel2" placeholder="Введите телефон">
+                </div>
+                <button>Отправить</button>
+            </form>
+        </div>
+    </dialog>
+
+    <dialog class="mobile-overlay" id="furnitureCategory">
+        <form class="mobile-overlay__close-button-wrapper" method="dialog">
+            <button class="cross-button" type="submit">
+                <span class="visually-hidden">Close menu</span>
+            </button>
+        </form>
+        <div class="order-body">
+            <div class="order-contact">
+                <h2 class="order-contact-title">Наши Контакты</h2>
+
+                <div class="order-content">
+                    <img class="order-tel-icons" src="./icons/footer-telephone.svg" alt="">
+                    <div class="order-tel">+7 (777) 000 00 00</div>
+                </div>
+                <!-- <div class="order-content">
+                    <h3 class="order-social-title">Cоц.сети</h3>
+                    <div class="order-social-icons-group">
+                        <img class="order-social-icon" src="./icons/footer-telegram.svg" alt="">
+                        <img class="order-social-icon" src="./icons/footer-instagram.svg" alt="">
+                        <img class="order-social-icon" src="./icons/footer-whatsapp.svg" alt="">
+                        <img class="order-social-icon" src="./icons/footer-mail.svg" alt="">
+                    </div>
+                </div> -->
+
+            </div>
+            <form class="sofasOrder" id="formСategory">
+                <h2 class="order-title">Заказать</h2>
+                <div class="order-form">
+                    <span>Выберите категорию</span>
+                    <select name="" id="typesСategory">
+                        <option value="">Выберите какую категорию мебели вы хотите</option>
+                        <option value="Кровать Вента 160">Кухню на заказ</option>
+                        <option value="Кресло Тилар">Мебель для спальни</option>
+                        <option value="Диван Роттердам">Детская мебель</option>
+                        <option value="Модульный диван Этен">Прихожая мебель</option>
+                        <option value="Диван Слипсон Happy">Гардероб на заказ</option>
+                        <option value="Диван Слипсон Happy">Комоды</option>
+                    </select>
+                </div>
+                <div class="order-form">
+                    <span>Ваш имя</span>
+                    <input type="text" placeholder="Введите имя" id="name3">
+                </div>
+                <div class="order-form">
+                    <span>Ваш телефон</span>
+                    <input type="text" placeholder="Введите телефон" id="tel3">
+                </div>
+                <button class="">Submit</button>
+            </form>
+        </div>
+    </dialog>
+
+
+    <!------------------- == JS == ------------------->
+
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="js/inputmask.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
